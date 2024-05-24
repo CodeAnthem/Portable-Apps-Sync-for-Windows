@@ -35,6 +35,7 @@ Tired of managing all your portable useful applications on multiple machines? I 
 4. *An example* directory should be there to test. Run the `__DownloadToComputer.bat` batch file to initially download the directory to your computer
 5. You'll be asked to choose the root location on this machine
 6. Now check out the location you have configured, you should see the `OnlyThisFileWillBeSynced.txt` file, an `Updater.bat` and a shortcut to the `Remote` location of this directory
+7. In your root directory on your client you will also see a `Remote` shortcut and a `PortableAppSync_UpdateAll.bat` to update all existing directories on the client
 
 ## Add your own PAS directories
 1. Make a copy of `__PAS_System\_newSyncFolderTemplate` to your PAS directory
