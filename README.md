@@ -1,7 +1,5 @@
 ![GitHub License](https://img.shields.io/github/license/CodeAnthem/Portable-Apps-Sync-for-Windows) ![GitHub top language](https://img.shields.io/github/languages/top/CodeAnthem/Portable-Apps-Sync-for-Windows)
 
-
-
 ## Description
 
 Tired of managing all your portable useful applications on multiple machines? I was, decided to make my solution publicly available.
@@ -21,8 +19,8 @@ Tired of managing all your portable useful applications on multiple machines? I 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Add your own PAS directories](#add-your-own-pas-directories)
-- [How to Contribute](#how-to-contribute)
-- [Support Portable App Sync](#support-portable-app-sync)
+- [Contributing](#contributing)
+- [Support](#support)
 
 ## Requirements
  - A remote SMB share to store Portable App Sync
@@ -44,16 +42,16 @@ Tired of managing all your portable useful applications on multiple machines? I 
 3. Drop all your tools into the directory
 4. Adjust the `excludedFiles.txt` to exclude files from being synced to the client
 5. Everything expect `excludedFiles.txt` `__DownloadToComputer.bat` `*.url` and everything inside **excludedFiles.txt** will not be synced to the client
+
 ![PAS_Illustration](assets/images/PAS_Example.png)
 
-💡Hint: Add an url to the download page of each tool, those will not be synced
-
+💡 Hint: Add an url to the download page of each tool, those will not be synced
 
 ---
 
-## How to Contribute
+## Contributing
 The goal of this project was exactly what it is now. However, if you find bugs or really good features, I might accept PR.
 
-## Support Portable App Sync
+## Support
 - PortableAppSync is a project I created to solve a problem with managing portable apps, while not having all of them on every machine. I decided to make it public, rewritten most of it and cleaned up the code, because it might help some people.
 - [Donate via PayPal](https://paypal.com/donate/?hosted_button_id=NX3BCLM4FPFLS)
