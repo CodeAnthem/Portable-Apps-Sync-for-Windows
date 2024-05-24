@@ -19,6 +19,8 @@ Tired of managing all your portable useful applications on multiple machines? I 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Add your own PAS directories](#add-your-own-pas-directories)
+- [Configuration](#configuration)
+- [If you need to adjust the configuration, simply open `PortableAppSync_Manager.bat`. Settings will be saved to *HKEY\_CURRENT\_USER\\Software\\PortableAppSync*](#if-you-need-to-adjust-the-configuration-simply-open-portableappsync_managerbat-settings-will-be-saved-to-hkey_current_usersoftwareportableappsync)
 - [Contributing](#contributing)
 - [Support](#support)
 
@@ -48,6 +50,8 @@ Tired of managing all your portable useful applications on multiple machines? I 
 
 💡 Hint: Add an url to the download page of each tool, those will not be synced
 
+## Configuration
+If you need to adjust the configuration, simply open `PortableAppSync_Manager.bat`. Settings will be saved to *HKEY_CURRENT_USER\Software\PortableAppSync*
 ---
 
 ## Contributing
