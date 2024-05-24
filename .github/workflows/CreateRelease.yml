@@ -1,36 +1,28 @@
-# This is a basic workflow to help you get started with Actions
+name: Release_Maker
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    # branches:
+    #   - "dev"
+  # workflow_dispatch:
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
+    if: startsWith(github.event.head_commit.message, 'Release') || startsWith(github.event.head_commit.message, 'release')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: "Git: Checkout"
+        uses: actions/checkout@master
+      - name: "Release: Create ZIP"
+        run: zip -qr release.zip . -x ".*/*" -i "/__PAS_System/*" "/An example/*"
+      - name: "Release: Upload Release"
+        if:  success() || failure() # required for first release, because above step fails
+        uses: ncipollo/release-action@v1.14.0
+        with:
+          artifacts: "release.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          bodyFile: "body.md"
+            
