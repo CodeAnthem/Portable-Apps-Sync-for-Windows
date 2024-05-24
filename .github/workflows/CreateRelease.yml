@@ -25,5 +25,5 @@ jobs:
           artifacts: "release.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
           tag: v1.03
-          bodyFile: "body.md"
+          bodyFile: "release.md"
             
