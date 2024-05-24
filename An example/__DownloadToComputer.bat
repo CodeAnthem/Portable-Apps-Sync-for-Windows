@@ -17,5 +17,5 @@
     rem GET CURRENT FOLDER NAME
     for %%a in (.) do set currentFolderName=%%~na
     rem CALL UPDATER WITH FOLDERNAME
-    call "..\__PSA_System\PortableAppSync_Manager.bat" "%currentFolderName%"
+    call "..\__PAS_System\PortableAppSync_Manager.bat" "%currentFolderName%"
 :: #################################################################################################################################################################################

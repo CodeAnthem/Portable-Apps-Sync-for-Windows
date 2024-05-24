@@ -1,7 +1,7 @@
 @echo off
 :: #################################################################################################################################################################################
 :: | [CRAFTED] Single download | Portable App Sync by CodeAnthem | Created: 22.07.2023
-:: | [AUTHOR] CodeAnthem | [MODIFIED] 23.05.2024 | [VERSION] 1.01
+:: | [AUTHOR] CodeAnthem | [MODIFIED] 24.05.2024 | [VERSION] 1.00
 :: ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 :: | [DESCRIPTION]
 :: |  Calls Manager on remote side with the target sync directory
@@ -17,5 +17,5 @@
     rem GET CURRENT FOLDER NAME
     for %%a in (.) do set currentFolderName=%%~na
     rem CALL UPDATER WITH FOLDERNAME
-    call "..\__PSA_System\PortableAppSync_Manager.bat" "%currentFolderName%"
+    call "..\__PAS_System\PortableAppSync_Manager.bat" "%currentFolderName%"
 :: #################################################################################################################################################################################

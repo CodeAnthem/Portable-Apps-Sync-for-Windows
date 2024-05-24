@@ -1,1 +1,0 @@
-a) Windows - Maintenance Tools\openhardwaremonitor-v0.9.6\OpenHardwareMonitor.config
