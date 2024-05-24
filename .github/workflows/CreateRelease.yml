@@ -2,8 +2,6 @@ name: Release_Maker
 
 on:
   push:
-    tags:
-    - '*'
     # branches:
     #   - "dev"
   # workflow_dispatch:
@@ -26,5 +24,6 @@ jobs:
         with:
           artifacts: "release.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
+          tag: v1.03
           bodyFile: "body.md"
             
