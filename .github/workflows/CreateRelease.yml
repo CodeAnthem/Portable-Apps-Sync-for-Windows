@@ -2,6 +2,8 @@ name: Release_Maker
 
 on:
   push:
+    tags:
+    - '*'
     # branches:
     #   - "dev"
   # workflow_dispatch:
