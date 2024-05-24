@@ -52,6 +52,7 @@ Tired of managing all your portable useful applications on multiple machines? I 
 
 ## Configuration
 If you need to adjust the configuration, simply open `PortableAppSync_Manager.bat`. Settings will be saved to *HKEY_CURRENT_USER\Software\PortableAppSync*
+
 ---
 
 ## Contributing
