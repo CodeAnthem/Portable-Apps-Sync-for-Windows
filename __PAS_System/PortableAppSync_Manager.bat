@@ -48,8 +48,8 @@
    rem  pause
 
     :: UPDATE SYSTEM
-    call:updatePASSystem
-   rem  if "%~3" == "forceUpdate" ( call:updatePASSystem ) else ( call:checkIfSystemUpdateRequired )
+   rem  call:updatePASSystem
+    if "%~3" == "forceUpdate" ( call:updatePASSystem ) else ( call:checkIfSystemUpdateRequired )
 
     :: CALL ITSELF IF NOT RUNNING FROM LOCAL
     set "scriptFileName=%~nx0"
