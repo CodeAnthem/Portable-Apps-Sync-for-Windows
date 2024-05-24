@@ -1,4 +1,4 @@
-![GitHub License](https://img.shields.io/github/license/CodeAnthem/Portable-Apps-Sync-for-Windows) ![GitHub top language](https://img.shields.io/github/languages/top/CodeAnthem/Portable-Apps-Sync-for-Windows)
+![GitHub License](https://img.shields.io/github/license/CodeAnthem/Portable-Apps-Sync-for-Windows%20) ![GitHub top language](https://img.shields.io/github/languages/top/CodeAnthem/Portable-Apps-Sync-for-Windows)
 
 ## Description
 
